@@ -34,6 +34,11 @@ nav {
         font-size: 20px;
         line-height: 40px;
         text-align: center;
+        cursor: pointer;
+    }
+
+    nav ul li:hover {
+        color: #9F7FDB;
     }
 
 main {
@@ -51,7 +56,11 @@ main {
     }
 
 form {
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 input {
@@ -62,13 +71,16 @@ input {
     border: 0;
 }
 
+input::placeholder {
+    color: white;
+}
+
     .input_name{  
-        margin-top: 4rem;
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
 
     .input_email{
-        margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
@@ -81,20 +93,36 @@ input {
 form button {
     width: 240px;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .btn_1 {
-    gap: 10px;
     background: #7834F3;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
     color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s all;
+    opacity: 0.9;
 }
 
 .btn_2 {
-    gap: 10px;
     background: #9F7FDB;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
     color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s all;
+    opacity: 0.9;
+}
+
+.btn_1:hover{
+    background-color: #7734f36c;
+}
+.btn_2:hover{
+    background-color:  #9f7fdb77;
 }
